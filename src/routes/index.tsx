@@ -64,12 +64,12 @@ function Index() {
           Volte em breve para conferir as novidades!
         </p>
 
-        <div className="mt-4 flex items-center gap-3 rounded-full border border-neon/40 bg-background/40 px-6 py-3 backdrop-blur-sm">
-          <span className="relative flex h-3 w-3">
+        <div className="mt-4 inline-flex items-center justify-center gap-3 rounded-full border border-neon/40 bg-foreground/5 px-6 py-3 backdrop-blur-md">
+          <span className="relative flex h-3 w-3 items-center justify-center">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-neon opacity-75" />
             <span className="relative inline-flex h-3 w-3 rounded-full bg-neon" />
           </span>
-          <span className="text-sm font-medium tracking-wider text-neon uppercase">
+          <span className="text-sm font-medium leading-none tracking-wider text-neon uppercase">
             Em breve
           </span>
         </div>
