@@ -1,9 +1,6 @@
 // Versão estática (sem TanStack Router) do componente Index, usada apenas
 // no build estático para gerar o HTML servido na Vercel.
-import logo from "@/assets/hub88-logo.jpeg";
-
-export default function StaticIndex({ logoSrc }: { logoSrc?: string }) {
-  const src = logoSrc ?? (logo as unknown as string);
+export default function StaticIndex({ logoSrc }: { logoSrc: string }) {
   return (
     <main
       className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 py-12 text-center"
