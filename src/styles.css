@@ -63,8 +63,12 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --background: oklch(0.18 0.04 240);
+  --foreground: oklch(0.95 0.02 200);
+  --neon: oklch(0.85 0.18 200);
+  --neon-glow: oklch(0.75 0.22 210);
+  --color-neon: var(--neon);
+  --color-neon-glow: var(--neon-glow);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
