@@ -19,7 +19,7 @@ export default function StaticIndex({ logoSrc }: { logoSrc: string }) {
       />
       <div className="relative z-10 flex max-w-2xl flex-col items-center gap-8">
         <img
-          src={src}
+          src={logoSrc}
           alt="Hub88 logo"
           className="w-64 rounded-full sm:w-80"
           style={{ filter: "drop-shadow(0 0 30px oklch(0.75 0.22 210 / 0.6))" }}
