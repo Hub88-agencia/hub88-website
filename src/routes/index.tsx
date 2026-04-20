@@ -62,7 +62,7 @@ function Index() {
           Volte em breve para conferir as novidades!
         </p>
 
-        <div className="mt-4 inline-flex items-center justify-center gap-3 rounded-full border border-neon/40 bg-foreground/5 px-6 py-3 backdrop-blur-md">
+        <div className="mt-4 inline-flex items-center justify-center rounded-full border border-neon/40 bg-foreground/5 px-6 py-3 backdrop-blur-md">
           <span className="text-sm font-medium leading-none tracking-wider text-neon uppercase">Em breve</span>
         </div>
       </div>
