@@ -38,14 +38,15 @@ const assetFiles = await readdir(assetsDir);
 const cssFile = assetFiles.find((f) => f.endsWith(".css"));
 const logoFile = assetFiles.find((f) => f.startsWith("hub88-logo"));
 
-// Renderiza o componente Index para HTML estático
-// Importa via tsx loader em runtime
-const { default: tsImport } = await import("tsx/esm/api");
-const indexModule = await tsImport.tsImport(
+// Renderiza o componente Index para HTML estático via tsx loader
+const { tsImport } = await import("tsx/esm/api");
+const indexModule = await tsImport(
   pathToFileURL(join(root, "src/static-page.tsx")).href,
   import.meta.url,
 );
-const html = renderToStaticMarkup(React.createElement(indexModule.default, { logoSrc: `/assets/${logoFile}` }));
+const html = renderToStaticMarkup(
+  React.createElement(indexModule.default, { logoSrc: `/assets/${logoFile}` }),
+);
 
 const fullHtml = `<!doctype html>
 <html lang="pt-BR">
